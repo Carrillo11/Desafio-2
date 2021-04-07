@@ -6,4 +6,95 @@
     android:layout_height="match_parent"
     tools:context=".detalle">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtprincipal"
+            android:layout_width="405dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:text="DETALLES"
+            android:textColor="#BE9485"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.166" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="305dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/tratamiento"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtnombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="MICRONEEDLING"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtprecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="90$"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtfecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:text="#/#/#"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txthora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#:##"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btncheck"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="80dp"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/checked"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
