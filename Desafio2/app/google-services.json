@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "62405402434",
+    "project_id": "valdivieso-salon",
+    "storage_bucket": "valdivieso-salon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62405402434:android:d5a10f798525a5ed18f2db",
+        "android_client_info": {
+          "package_name": "sv.edu.udb.desafio2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62405402434-9g43h943nc5rqeb8fe1808j9hiqi3g31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtzuOYO-OCGVwXyMxsCVSiAHLG9TRRFSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62405402434-9g43h943nc5rqeb8fe1808j9hiqi3g31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

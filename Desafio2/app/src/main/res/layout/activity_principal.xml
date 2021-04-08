@@ -43,8 +43,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="70dp"
-                    android:text="MICRONEEDLING"
                     android:fontFamily="@font/lato_bold"
+                    android:text="MICRONEEDLING"
                     android:textColor="#FFFF"
                     android:textSize="26sp"
                     android:textStyle="bold" />
@@ -56,7 +56,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="60dp"
                     android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario"/>
+                    android:drawableBottom="@drawable/calendario" />
 
                 <Button
                     android:id="@+id/btnhora"
@@ -65,7 +65,7 @@
                     android:layout_marginLeft="80dp"
                     android:layout_marginTop="-50dp"
                     android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj"/>
+                    android:drawableBottom="@drawable/reloj" />
 
                 <Button
                     android:id="@+id/btnagregar"
@@ -74,7 +74,7 @@
                     android:layout_marginLeft="150dp"
                     android:layout_marginTop="-50dp"
                     android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send"/>
+                    android:drawableBottom="@drawable/send" />
 
                 <TextView
                     android:id="@+id/txtprecio"
@@ -82,13 +82,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-50dp"
                     android:layout_marginRight="150dp"
-                    android:text="90$"
                     android:fontFamily="@font/lato_bold"
+                    android:text="90$"
                     android:textColor="#FFFF"
                     android:textSize="26sp"
                     android:textStyle="bold" />
-
-
 
 
             </LinearLayout>
