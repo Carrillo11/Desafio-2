@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btncuenta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crearcuenta">
+
+    <Button
+        android:id="@+id/btnrgstr"
+        android:layout_width="205dp"
+        android:layout_height="51dp"
+        android:background="@drawable/btnradius"
+        android:fontFamily="@font/lato"
+        android:text="Registrar"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <EditText
+        android:id="@+id/etcorreo2"
+        android:layout_width="238dp"
+        android:layout_height="45dp"
+        android:background="@drawable/raduisinput"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <EditText
+        android:id="@+id/etcontra2"
+        android:layout_width="238dp"
+        android:layout_height="45dp"
+        android:background="@drawable/raduisinput"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="256dp"
+        android:layout_height="128dp"
+        android:src="@drawable/icono"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+</androidx.constraintlayout.widget.ConstraintLayout>

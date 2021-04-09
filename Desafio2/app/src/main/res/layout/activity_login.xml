@@ -7,12 +7,14 @@
     tools:context=".login">
 
     <Button
-        android:id="@+id/btnregistrar"
+        android:id="@+id/btncuenta"
         android:layout_width="205dp"
         android:layout_height="51dp"
         android:background="@drawable/btnradius"
-        android:text="Registrar"
+        android:fontFamily="@font/lato"
+        android:text="Crear Cuenta"
         android:textColor="#FFFFFF"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -41,6 +43,7 @@
         android:fontFamily="@font/lato"
         android:hint="Correo"
         android:inputType="textEmailAddress"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -57,6 +60,7 @@
         android:fontFamily="@font/lato"
         android:hint="Contraseña"
         android:inputType="textPassword"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -64,39 +68,59 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <Button
         android:id="@+id/btniniciar"
         android:layout_width="205dp"
         android:layout_height="51dp"
         android:background="@drawable/btnradius"
+        android:fontFamily="@font/lato"
         android:text="Iniciar Sesion"
         android:textColor="#FFFFFF"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.622" />
 
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="205dp"
+        android:layout_height="51dp"
+        android:background="@drawable/btnradius"
+        android:fontFamily="@font/lato"
+        android:text="Continuar con Google"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="406dp"
         android:layout_height="37dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.792">
+        app:layout_constraintVertical_bias="0.89">
 
         <com.facebook.login.widget.LoginButton
             android:id="@+id/login_button"
             android:layout_width="205dp"
-            android:layout_height="51dp"
+            android:layout_height="55dp"
             android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:background="@drawable/btnradius" />
+            android:background="@drawable/btnradius"
+            android:fontFamily="@font/lato"
+            />
+
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
