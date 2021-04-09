@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <ScrollView
+    <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,652 +7,656 @@
     android:orientation="vertical"
     tools:context=".principal">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <TextView
                 android:id="@+id/txtprincipal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/line"
+                android:fontFamily="@font/lato"
                 android:gravity="center"
-                android:fontFamily="@font/lato_bold"
                 android:text="TRATAMIENTOS"
-                android:textColor="#BE9485"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textColor="#000000"
+                android:textSize="30sp" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="229dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/tratamiento"
-                android:gravity="center"
-                android:orientation="vertical">
+            />
 
-                <TextView
-                    android:id="@+id/txtnombre"
-                    android:layout_width="wrap_content"
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="70dp"
-                    android:fontFamily="@font/lato_bold"
-                    android:text="MICRONEEDLING"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btnfecha"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario" />
-
-                <Button
-                    android:id="@+id/btnhora"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj" />
-
-                <Button
-                    android:id="@+id/btnagregar"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send" />
-
-                <TextView
-                    android:id="@+id/txtprecio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
-                    android:layout_marginRight="150dp"
-                    android:fontFamily="@font/lato_bold"
-                    android:text="90$"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="229dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/tratamiento"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtnombre1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="70dp"
-                    android:text="MICRONEEDLING"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btnfecha1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario"/>
-
-                <Button
-                    android:id="@+id/btnhora1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj"/>
-
-                <Button
-                    android:id="@+id/btnagregar1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send"/>
-
-                <TextView
-                    android:id="@+id/txtprecio1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
-                    android:layout_marginRight="150dp"
-                    android:text="90$"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="229dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/tratamiento"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtnombre2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="70dp"
-                    android:text="MICRONEEDLING"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btnfecha2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario"/>
-
-                <Button
-                    android:id="@+id/btnhora2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj"/>
-
-                <Button
-                    android:id="@+id/btnagregar2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send"/>
-
-                <TextView
-                    android:id="@+id/txtprecio2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
-                    android:layout_marginRight="150dp"
-                    android:text="90$"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="229dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/tratamiento"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtnombre3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="70dp"
-                    android:text="MICRONEEDLING"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btnfecha3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario"/>
-
-                <Button
-                    android:id="@+id/btnhora3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj"/>
-
-                <Button
-                    android:id="@+id/btnagregar3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send"/>
-
-                <TextView
-                    android:id="@+id/txtprecio3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
-                    android:layout_marginRight="150dp"
-                    android:text="90$"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="229dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/tratamiento"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtnombre4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="70dp"
-                    android:text="MICRONEEDLING"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btnfecha4"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario"/>
-
-                <Button
-                    android:id="@+id/btnhora4"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj"/>
-
-                <Button
-                    android:id="@+id/btnagregar4"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send"/>
-
-                <TextView
-                    android:id="@+id/txtprecio4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
-                    android:layout_marginRight="150dp"
-                    android:text="90$"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="229dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/tratamiento"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtnombre5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="70dp"
-                    android:text="MICRONEEDLING"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btnfecha5"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario"/>
-
-                <Button
-                    android:id="@+id/btnhora5"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj"/>
-
-                <Button
-                    android:id="@+id/btnagregar5"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send"/>
-
-                <TextView
-                    android:id="@+id/txtprecio5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
-                    android:layout_marginRight="150dp"
-                    android:text="90$"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="229dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/tratamiento"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtnombre6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="70dp"
-                    android:text="MICRONEEDLING"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btnfecha6"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario"/>
-
-                <Button
-                    android:id="@+id/btnhora6"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj"/>
-
-                <Button
-                    android:id="@+id/btnagregar6"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send"/>
-
-                <TextView
-                    android:id="@+id/txtprecio6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
-                    android:layout_marginRight="150dp"
-                    android:text="90$"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="229dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/tratamiento"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtnombre7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="70dp"
-                    android:text="MICRONEEDLING"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btnfecha7"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario"/>
-
-                <Button
-                    android:id="@+id/btnhora7"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj"/>
-
-                <Button
-                    android:id="@+id/btnagregar7"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send"/>
-
-                <TextView
-                    android:id="@+id/txtprecio7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
-                    android:layout_marginRight="150dp"
-                    android:text="90$"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="229dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/tratamiento"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtnombre8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="70dp"
-                    android:text="MICRONEEDLING"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btnfecha8"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario"/>
-
-                <Button
-                    android:id="@+id/btnhora8"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj"/>
-
-                <Button
-                    android:id="@+id/btnagregar8"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send"/>
-
-                <TextView
-                    android:id="@+id/txtprecio8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
-                    android:layout_marginRight="150dp"
-                    android:text="90$"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="229dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="50dp"
-                android:background="@drawable/tratamiento"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtnombre9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="70dp"
-                    android:text="MICRONEEDLING"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btnfecha9"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/calendario"/>
-
-                <Button
-                    android:id="@+id/btnhora9"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/reloj"/>
-
-                <Button
-                    android:id="@+id/btnagregar9"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@android:color/transparent"
-                    android:drawableBottom="@drawable/send"/>
-
-                <TextView
-                    android:id="@+id/txtprecio9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
-                    android:layout_marginRight="150dp"
-                    android:text="90$"
-                    android:fontFamily="@font/lato_bold"
-                    android:textColor="#FFFF"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-
-
-            </LinearLayout>
-
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tratamiento"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtnombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="70dp"
+                            android:fontFamily="@font/lato"
+                            android:text="MICRONEEDLING"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp" />
+
+                        <Button
+                            android:id="@+id/btnfecha"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/calendario" />
+
+                        <Button
+                            android:id="@+id/btnhora"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/reloj" />
+
+                        <Button
+                            android:id="@+id/btnagregar"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/send" />
+
+                        <TextView
+                            android:id="@+id/txtprecio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="150dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="90$"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tratamiento"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtnombre1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="70dp"
+                            android:fontFamily="@font/lato"
+                            android:text="MICRONEEDLING"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp" />
+
+                        <Button
+                            android:id="@+id/btnfecha1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/calendario" />
+
+                        <Button
+                            android:id="@+id/btnhora1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/reloj" />
+
+                        <Button
+                            android:id="@+id/btnagregar1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/send" />
+
+                        <TextView
+                            android:id="@+id/txtprecio1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="150dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="90$"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tratamiento"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtnombre2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="70dp"
+                            android:fontFamily="@font/lato"
+                            android:text="MICRONEEDLING"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp" />
+
+                        <Button
+                            android:id="@+id/btnfecha2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/calendario" />
+
+                        <Button
+                            android:id="@+id/btnhora2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/reloj" />
+
+                        <Button
+                            android:id="@+id/btnagregar2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/send" />
+
+                        <TextView
+                            android:id="@+id/txtprecio2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="150dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="90$"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tratamiento"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtnombre3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="70dp"
+                            android:fontFamily="@font/lato"
+                            android:text="MICRONEEDLING"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp" />
+
+                        <Button
+                            android:id="@+id/btnfecha3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/calendario" />
+
+                        <Button
+                            android:id="@+id/btnhora3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/reloj" />
+
+                        <Button
+                            android:id="@+id/btnagregar3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/send" />
+
+                        <TextView
+                            android:id="@+id/txtprecio3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="150dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="90$"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tratamiento"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtnombre4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="70dp"
+                            android:fontFamily="@font/lato"
+                            android:text="MICRONEEDLING"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp" />
+
+                        <Button
+                            android:id="@+id/btnfecha4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/calendario" />
+
+                        <Button
+                            android:id="@+id/btnhora4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/reloj" />
+
+                        <Button
+                            android:id="@+id/btnagregar4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/send" />
+
+                        <TextView
+                            android:id="@+id/txtprecio4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="150dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="90$"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tratamiento"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtnombre5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="70dp"
+                            android:fontFamily="@font/lato"
+                            android:text="MICRONEEDLING"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp" />
+
+                        <Button
+                            android:id="@+id/btnfecha5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/calendario" />
+
+                        <Button
+                            android:id="@+id/btnhora5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/reloj" />
+
+                        <Button
+                            android:id="@+id/btnagregar5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/send" />
+
+                        <TextView
+                            android:id="@+id/txtprecio5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="150dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="90$"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tratamiento"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtnombre6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="70dp"
+                            android:fontFamily="@font/lato"
+                            android:text="MICRONEEDLING"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp" />
+
+                        <Button
+                            android:id="@+id/btnfecha6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/calendario" />
+
+                        <Button
+                            android:id="@+id/btnhora6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/reloj" />
+
+                        <Button
+                            android:id="@+id/btnagregar6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/send" />
+
+                        <TextView
+                            android:id="@+id/txtprecio6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="150dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="90$"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tratamiento"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtnombre7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="70dp"
+                            android:fontFamily="@font/lato"
+                            android:text="MICRONEEDLING"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp" />
+
+                        <Button
+                            android:id="@+id/btnfecha7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/calendario" />
+
+                        <Button
+                            android:id="@+id/btnhora7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/reloj" />
+
+                        <Button
+                            android:id="@+id/btnagregar7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/send" />
+
+                        <TextView
+                            android:id="@+id/txtprecio7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="150dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="90$"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tratamiento"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtnombre8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="70dp"
+                            android:fontFamily="@font/lato"
+                            android:text="MICRONEEDLING"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp" />
+
+                        <Button
+                            android:id="@+id/btnfecha8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/calendario" />
+
+                        <Button
+                            android:id="@+id/btnhora8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/reloj" />
+
+                        <Button
+                            android:id="@+id/btnagregar8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/send" />
+
+                        <TextView
+                            android:id="@+id/txtprecio8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="150dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="90$"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="50dp"
+                        android:background="@drawable/tratamiento"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtnombre9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="70dp"
+                            android:fontFamily="@font/lato"
+                            android:text="MICRONEEDLING"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp" />
+
+                        <Button
+                            android:id="@+id/btnfecha9"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/calendario" />
+
+                        <Button
+                            android:id="@+id/btnhora9"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/reloj" />
+
+                        <Button
+                            android:id="@+id/btnagregar9"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="-50dp"
+                            android:background="@android:color/transparent"
+                            android:drawableBottom="@drawable/send" />
+
+                        <TextView
+                            android:id="@+id/txtprecio9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="150dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="90$"
+                            android:textColor="#FFFF"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
         </LinearLayout>
-
-
-    </RelativeLayout>
-</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="665dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+    </LinearLayout>
+</RelativeLayout>
