@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="amarillo">#FDFCDE</color>
     <color name="pastel">#E1C2B7</color>
+    <color name="rojo">#FF5454</color>
 </resources>

@@ -8,13 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class principal extends Activity {
-private Button btnInicio, btnDetalle, btnUsuario;
+public class Perfil extends Activity {
+    private Button btnInicio, btnDetalle, btnUsuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_principal);
+        setContentView(R.layout.activity_perfil);
+
         initializeUI();
 
         btnInicio.setOnClickListener(new View.OnClickListener() {
@@ -50,5 +51,4 @@ private Button btnInicio, btnDetalle, btnUsuario;
         btnDetalle = findViewById(R.id.btndetalle);
         btnUsuario = findViewById(R.id.btnusuario);
     }
-
 }
