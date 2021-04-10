@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:gravity="center_horizontal"
+        android:text="Detalle"
+        android:textSize="24sp"
+        android:textColor="#00f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtnombre"
+        android:gravity="center_horizontal"
+        android:text="MICRONEEDLING"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtprecio"
+        android:gravity="center_horizontal"
+        android:text="$90"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnfecha"
+        android:layout_width="61dp"
+        android:layout_height="52dp"
+        android:drawableBottom="@drawable/calendario" />
+    <TextView
+        android:id="@+id/txtfecha"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnhora"
+        android:layout_width="61dp"
+        android:layout_height="52dp"
+        android:drawableBottom="@drawable/reloj" />
+    <TextView
+        android:id="@+id/txthora"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+    <Button
+        android:text="Guardar"
+        android:onClick="guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Cancelar"
+        android:onClick="cancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
