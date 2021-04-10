@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +17,7 @@
             android:background="@drawable/line"
             android:fontFamily="@font/lato"
             android:gravity="center"
-            android:text="PERFIL"
+            android:text="CITAS"
             android:textColor="#000000"
             android:textSize="30sp" />
     </LinearLayout>
@@ -39,6 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="3dp"
+        android:layout_marginVertical="39dp"
         android:scrollbars="vertical"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
