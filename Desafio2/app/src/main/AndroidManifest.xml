@@ -13,9 +13,11 @@
         android:theme="@style/Theme.Desafio2">
         <activity android:name=".Perfil"></activity>
         <activity android:name=".crearcuenta" />
-        <activity android:name=".detalle" />
+        <activity android:name=".Detalle" />
         <activity android:name=".principal" />
         <activity android:name=".login" />
+        <activity android:name=".AddDetalleActivity" />
+        <activity android:name=".DetalleActivity" />
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
