@@ -41,9 +41,9 @@ public class AdaptadorDetalle extends ArrayAdapter<Detalle>{
         TextView tvHora = rowview.findViewById(R.id.txthora);
 
         tvNombre.setText("Nombre : "+ detalles.get(position).getNombre());
-        tvPrecio.setText("DUI : " + detalles.get(position).getPrecio());
+        tvPrecio.setText("Precio : " + detalles.get(position).getPrecio());
         tvFecha.setText("Fecha : " + detalles.get(position).getFecha());
-        tvHora.setText("Genero : " + detalles.get(position).getHora());
+        tvHora.setText("Hora : " + detalles.get(position).getHora());
 
         return rowview;
     }

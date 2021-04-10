@@ -14,21 +14,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/txtprincipal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="-10dp"
-                android:background="@drawable/line"
-                android:fontFamily="@font/lato"
-                android:gravity="center"
-                android:text="TRATAMIENTOS"
-                android:textColor="#000000"
-                android:textSize="30sp" />
-
-
-
-
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -95,7 +80,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="70dp"
                             android:fontFamily="@font/lato"
-                            android:text="MICRONEEDLING"
+                            android:text="KULA"
                             android:textColor="#FFFF"
                             android:textSize="26sp" />
 
@@ -115,7 +100,7 @@
                             android:layout_marginTop="60dp"
                             android:layout_marginRight="150dp"
                             android:fontFamily="@font/lato_bold"
-                            android:text="90$"
+                            android:text="45$"
                             android:textColor="#FFFF"
                             android:textSize="26sp"
                             android:textStyle="bold" />
@@ -137,9 +122,50 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="70dp"
                             android:fontFamily="@font/lato"
-                            android:text="MICRONEEDLING"
+                            android:text="RADIOFRECUENCIA"
                             android:textColor="#FFFF"
                             android:textSize="26sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="229dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/tratamiento"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtnombre4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="70dp"
+                                android:fontFamily="@font/lato"
+                                android:text="FOTOBIOLOGICA"
+                                android:textColor="#FFFF"
+                                android:textSize="26sp" />
+
+                            <Button
+                                android:id="@+id/btnagregar4"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="150dp"
+                                android:layout_marginTop="-40dp"
+                                android:background="@android:color/transparent"
+                                android:drawableBottom="@drawable/send" />
+
+                            <TextView
+                                android:id="@+id/txtprecio4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="60dp"
+                                android:layout_marginRight="150dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:text="100$"
+                                android:textColor="#FFFF"
+                                android:textSize="26sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
 
                         <Button
                             android:id="@+id/btnagregar3"
@@ -157,52 +183,11 @@
                             android:layout_marginTop="60dp"
                             android:layout_marginRight="150dp"
                             android:fontFamily="@font/lato_bold"
-                            android:text="90$"
+                            android:text="89$"
                             android:textColor="#FFFF"
                             android:textSize="26sp"
                             android:textStyle="bold" />
 
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="229dp"
-                        android:layout_marginTop="15dp"
-                        android:background="@drawable/tratamiento"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/txtnombre4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="70dp"
-                            android:fontFamily="@font/lato"
-                            android:text="MICRONEEDLING"
-                            android:textColor="#FFFF"
-                            android:textSize="26sp" />
-
-                        <Button
-                            android:id="@+id/btnagregar4"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="150dp"
-                            android:layout_marginTop="-40dp"
-                            android:background="@android:color/transparent"
-                            android:drawableBottom="@drawable/send" />
-
-                        <TextView
-                            android:id="@+id/txtprecio4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="60dp"
-                            android:layout_marginRight="150dp"
-                            android:fontFamily="@font/lato_bold"
-                            android:text="90$"
-                            android:textColor="#FFFF"
-                            android:textSize="26sp"
-                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -220,7 +205,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="70dp"
                             android:fontFamily="@font/lato"
-                            android:text="MICRONEEDLING"
+                            android:text="SKIN POETRY"
                             android:textColor="#FFFF"
                             android:textSize="26sp" />
 
@@ -240,7 +225,7 @@
                             android:layout_marginTop="60dp"
                             android:layout_marginRight="150dp"
                             android:fontFamily="@font/lato_bold"
-                            android:text="90$"
+                            android:text="180$"
                             android:textColor="#FFFF"
                             android:textSize="26sp"
                             android:textStyle="bold" />
@@ -262,7 +247,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="70dp"
                             android:fontFamily="@font/lato"
-                            android:text="MICRONEEDLING"
+                            android:text="MESOTERAPIA"
                             android:textColor="#FFFF"
                             android:textSize="26sp" />
 
@@ -282,7 +267,7 @@
                             android:layout_marginTop="60dp"
                             android:layout_marginRight="150dp"
                             android:fontFamily="@font/lato_bold"
-                            android:text="90$"
+                            android:text="180$"
                             android:textColor="#FFFF"
                             android:textSize="26sp"
                             android:textStyle="bold" />
@@ -304,7 +289,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="70dp"
                             android:fontFamily="@font/lato"
-                            android:text="MICRONEEDLING"
+                            android:text="EXFOLIANTE"
                             android:textColor="#FFFF"
                             android:textSize="26sp" />
 
@@ -324,7 +309,7 @@
                             android:layout_marginTop="60dp"
                             android:layout_marginRight="150dp"
                             android:fontFamily="@font/lato_bold"
-                            android:text="90$"
+                            android:text="60$"
                             android:textColor="#FFFF"
                             android:textSize="26sp"
                             android:textStyle="bold" />
@@ -345,7 +330,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="70dp"
                             android:fontFamily="@font/lato"
-                            android:text="MICRONEEDLING"
+                            android:text="PEDICURA MEDICA"
                             android:textColor="#FFFF"
                             android:textSize="26sp" />
 
@@ -365,7 +350,7 @@
                             android:layout_marginTop="60dp"
                             android:layout_marginRight="150dp"
                             android:fontFamily="@font/lato_bold"
-                            android:text="90$"
+                            android:text="185$"
                             android:textColor="#FFFF"
                             android:textSize="26sp"
                             android:textStyle="bold" />
@@ -386,7 +371,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="70dp"
                             android:fontFamily="@font/lato"
-                            android:text="MICRONEEDLING"
+                            android:text="PRAMASAMA"
                             android:textColor="#FFFF"
                             android:textSize="26sp" />
 
@@ -406,7 +391,7 @@
                             android:layout_marginTop="60dp"
                             android:layout_marginRight="150dp"
                             android:fontFamily="@font/lato_bold"
-                            android:text="90$"
+                            android:text="35$"
                             android:textColor="#FFFF"
                             android:textSize="26sp"
                             android:textStyle="bold" />
@@ -428,7 +413,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="70dp"
                             android:fontFamily="@font/lato"
-                            android:text="MICRONEEDLING"
+                            android:text="LUMINOSIDAD"
                             android:textColor="#FFFF"
                             android:textSize="26sp" />
 
@@ -448,7 +433,7 @@
                             android:layout_marginTop="60dp"
                             android:layout_marginRight="150dp"
                             android:fontFamily="@font/lato_bold"
-                            android:text="90$"
+                            android:text="50$"
                             android:textColor="#FFFF"
                             android:textSize="26sp"
                             android:textStyle="bold" />
@@ -460,6 +445,20 @@
                 </LinearLayout>
 
             </ScrollView>
+
+            <TextView
+                android:id="@+id/txtprincipal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/line"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="TRATAMIENTOS"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

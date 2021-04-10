@@ -71,7 +71,6 @@ public class DetalleActivity extends Activity {
     }
 
     private void inicializar() {
-        FloatingActionButton fab_agregar= findViewById(R.id.fab_agregar);
         listaDestinos = findViewById(R.id.ListaPersonas);
 
         // Cuando el usuario haga clic en la lista (para editar registro)
@@ -119,21 +118,6 @@ public class DetalleActivity extends Activity {
 
                 ad.show();
                 return true;
-            }
-        });
-
-        fab_agregar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Cuando el usuario quiere agregar un nuevo registro
-                Intent i = new Intent(getBaseContext(), AddDetalleActivity.class);
-                i.putExtra("accion","a"); // Agregar
-                i.putExtra("key","");
-                i.putExtra("nombre","Hola");
-                i.putExtra("precio","$94");
-                i.putExtra("fecha","");
-                i.putExtra("hora","");
-                startActivity(i);
             }
         });
 
