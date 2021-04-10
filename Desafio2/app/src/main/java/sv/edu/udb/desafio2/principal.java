@@ -25,7 +25,7 @@ private Button btnInicio, btnDetalle, btnUsuario;
                 finish();
             }
         });
-
+        
         btnDetalle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
