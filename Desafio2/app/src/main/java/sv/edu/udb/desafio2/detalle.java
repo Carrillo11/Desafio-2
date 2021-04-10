@@ -1,7 +1,7 @@
 package sv.edu.udb.desafio2;
 
 
-public class Detalle {
+class Detalle {
     private String nombre;
     private String fecha;
     private String hora;

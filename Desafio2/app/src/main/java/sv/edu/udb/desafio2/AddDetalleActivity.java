@@ -1,5 +1,6 @@
 package sv.edu.udb.desafio2;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
@@ -8,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import sv.edu.udb.desafio2.Detalle;
-public class AddDetalleActivity extends AppCompatActivity{
+public class AddDetalleActivity extends Activity {
     TextView txtnombre, txthora, txtfecha, txtprecio;
     String key="",nombre="",precio="",fecha="",ho="", accion="";
     @Override

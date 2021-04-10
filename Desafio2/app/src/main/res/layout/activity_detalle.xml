@@ -17,17 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/txtprincipal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="-10dp"
-                android:background="@drawable/line"
-                android:fontFamily="@font/lato"
-                android:gravity="center"
-                android:text="DETALLES"
-                android:textColor="#000000"
-                android:textSize="30sp" />
+
 
 
             <LinearLayout
@@ -92,49 +82,6 @@
 
 
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginVertical="665dp"
-            android:background="@color/white"
-            android:orientation="vertical"
-            >
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/line"
-                android:rotationX="-180">
-
-
-            </TextView>
-            <Button
-                android:id="@+id/btninicio"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="45dp"
-                android:layout_marginTop="-65dp"
-                android:background="@android:color/transparent"
-                android:drawableBottom="@drawable/home" />
-
-            <Button
-                android:id="@+id/btndetalle"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="180dp"
-                android:layout_marginTop="-50dp"
-                android:background="@android:color/transparent"
-                android:drawableBottom="@drawable/menu" />
-
-            <Button
-                android:id="@+id/btnusuario"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="300dp"
-                android:layout_marginTop="-50dp"
-                android:background="@android:color/transparent"
-                android:drawableBottom="@drawable/user" />
-
-        </LinearLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
