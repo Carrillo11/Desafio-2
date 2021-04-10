@@ -1,4 +1,5 @@
 package sv.edu.udb.desafio2;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
@@ -6,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +22,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-public class DetalleActivity extends  AppCompatActivity{
+public class DetalleActivity extends Activity {
+    private Button btnInicio, btnDetalle, btnUsuario;
     public static FirebaseDatabase database = FirebaseDatabase.getInstance();
     public static DatabaseReference refDetalle = database.getReference("detalles");
 
@@ -36,6 +39,34 @@ public class DetalleActivity extends  AppCompatActivity{
         setContentView(R.layout.activity_lista_detalle);
 
         inicializar();
+        initializeUI();
+
+        btnInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), principal.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        btnDetalle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), DetalleActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        btnUsuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Perfil.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 
@@ -132,5 +163,9 @@ public class DetalleActivity extends  AppCompatActivity{
             }
         });
     }
-
+    private void initializeUI() {
+        btnInicio = findViewById(R.id.btninicio);
+        btnDetalle = findViewById(R.id.btndetalle);
+        btnUsuario = findViewById(R.id.btnusuario);
+    }
 }

@@ -34,7 +34,7 @@ public class Perfil extends Activity {
         btnDetalle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), detalle.class);
+                Intent intent = new Intent(getApplicationContext(), DetalleActivity.class);
                 startActivity(intent);
                 finish();
             }

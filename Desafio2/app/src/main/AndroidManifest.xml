@@ -13,7 +13,6 @@
         android:theme="@style/Theme.Desafio2">
         <activity android:name=".Perfil"></activity>
         <activity android:name=".crearcuenta" />
-        <activity android:name=".Detalle" />
         <activity android:name=".principal" />
         <activity android:name=".login" />
         <activity android:name=".AddDetalleActivity" />
