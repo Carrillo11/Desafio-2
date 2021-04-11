@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -54,6 +55,7 @@ public class Perfil extends Activity {
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(Perfil.this, login.class));
+                Toast.makeText(getApplicationContext(), "Se ha cerrado sesion.", Toast.LENGTH_LONG).show();
             }
         });
     }

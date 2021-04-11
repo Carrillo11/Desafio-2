@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -99,10 +100,12 @@ public class AddDetalleActivity extends Activity {
 
         if (accion.equals("a")) { //Agregar usando push()
             DetalleActivity.refDetalle.push().setValue(detalle);
+            Toast.makeText(getApplicationContext(), "Su cita ha sido agendada.", Toast.LENGTH_LONG).show();
         }
         else // Editar usando setValue
         {
             DetalleActivity.refDetalle.child(key).setValue(detalle);
+            Toast.makeText(getApplicationContext(), "Su cita se ha modificado.", Toast.LENGTH_LONG).show();
         }
         finish();
     }

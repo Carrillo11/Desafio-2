@@ -11,7 +11,7 @@ public class Detalle {
     public Detalle() {
     }
 
-    public Detalle(String nombre, String precio, String fecha, String hora){
+    public Detalle(String nombre, String fecha, String hora, String precio){
         this.nombre = nombre;
         this.fecha = fecha;
         this.hora = hora;
